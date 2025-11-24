@@ -25,8 +25,8 @@ Deno.test("Average with Mock: mode call count", async () => {
   const avg = new Average(mock);
 
   const mode = await avg.computeModeOfFile();
-  expect(mode).toEqual([20]); // 20 kommt am häufigsten
-  expect(mock.calls).toBe(1); // Mock wurde genau einmal aufgerufen
+  expect(mode).toEqual([20]); 
+  expect(mock.calls).toBe(1);
 });
 
 Deno.test("Average with Fake: mean, median, mode", async () => {
