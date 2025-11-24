@@ -1,4 +1,6 @@
-export class FileAccess {
+import { IReadNumbers } from "./IReadNumbers.ts";
+
+export class FileAccess implements IReadNumbers {
   constructor(private path: string) {}
 
   public async readNumbers() {
